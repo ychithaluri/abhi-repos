@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            // Build stage steps go here
+        }
+        stage('Test') {
+            // Test stage steps go here
+        }
+	stage('scan') {
+	    // scqanning stage steps go here
+	}
+	stage ('artifactory'){
+	    // artifacts are generated and stored here
+	}
+        stage('Deploy') {
+            // Deployment stage steps go here
+        }
+    }
+}
